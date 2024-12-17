@@ -64,6 +64,7 @@ namespace employee_management
             this.lgoin_button.TabIndex = 16;
             this.lgoin_button.Text = "REGISTER";
             this.lgoin_button.UseVisualStyleBackColor = false;
+            this.lgoin_button.Click += new System.EventHandler(this.signup_btn_Click);
             // 
             // signup_showPassword
             // 
@@ -87,6 +88,7 @@ namespace employee_management
             this.signup_password.PasswordChar = '*';
             this.signup_password.Size = new System.Drawing.Size(261, 30);
             this.signup_password.TabIndex = 14;
+            this.signup_password.TextChanged += new System.EventHandler(this.signup_password_TextChanged);
             // 
             // label4
             // 

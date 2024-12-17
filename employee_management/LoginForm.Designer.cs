@@ -157,7 +157,7 @@ namespace employee_management
             this.login_username.Name = "login_username";
             this.login_username.Size = new System.Drawing.Size(261, 30);
             this.login_username.TabIndex = 3;
-            this.login_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.login_username.TextChanged += new System.EventHandler(this.login_username_TextChanged);
             // 
             // login_password
             // 
@@ -166,6 +166,7 @@ namespace employee_management
             this.login_password.Location = new System.Drawing.Point(283, 214);
             this.login_password.Multiline = true;
             this.login_password.Name = "login_password";
+            this.login_password.PasswordChar = '*';
             this.login_password.Size = new System.Drawing.Size(261, 30);
             this.login_password.TabIndex = 5;
             this.login_password.TextChanged += new System.EventHandler(this.login_password_TextChanged);
@@ -191,7 +192,7 @@ namespace employee_management
             this.login_showPassword.TabIndex = 6;
             this.login_showPassword.Text = "Show Password";
             this.login_showPassword.UseVisualStyleBackColor = true;
-            this.login_showPassword.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.login_showPassword.CheckedChanged += new System.EventHandler(this.login_showPass_CheckedChanged);
             // 
             // lgoin_button
             // 
@@ -210,7 +211,7 @@ namespace employee_management
             this.lgoin_button.TabIndex = 7;
             this.lgoin_button.Text = "LOGIN";
             this.lgoin_button.UseVisualStyleBackColor = false;
-            this.lgoin_button.Click += new System.EventHandler(this.lgoin_button_Click);
+            this.lgoin_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // LoginForm
             // 
