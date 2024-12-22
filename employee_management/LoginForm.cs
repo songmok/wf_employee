@@ -15,7 +15,9 @@ namespace employee_management
 {
     public partial class LoginForm : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PC_1\Desktop\songmok\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\code\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+
+
 
         public LoginForm()
         {
@@ -100,10 +102,14 @@ namespace employee_management
                             {
                                 MessageBox.Show("Login successfully!"
                                     , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                MainForm mForm = new MainForm();
+                                mForm.Show();
+                                this.Hide();
                             }
                             else
                             {
-                                MessageBox.Show("Login successfully!"
+                                MessageBox.Show("Incorrect Username/Password"
                                     , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }

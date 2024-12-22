@@ -14,7 +14,8 @@ namespace employee_management
 {
     public partial class RegisterForm : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PC_1\Desktop\songmok\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\code\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+
 
 
         public RegisterForm()
@@ -64,7 +65,7 @@ namespace employee_management
             if (signup_username.Text == ""
                 || signup_password.Text == "")
             {
-                MessageBox.Show("Pleas fill all black fileds", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
