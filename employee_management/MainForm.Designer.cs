@@ -40,12 +40,12 @@
             this.user = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.addEmployee1 = new employee_management.AddEmployee();
-            this.salaly1 = new employee_management.Salaly();
             this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.employeeDataSet1 = new employee_management.employeeDataSet();
             this.dashboard1 = new employee_management.Dashboard();
+            this.addEmployee1 = new employee_management.AddEmployee();
+            this.salaly1 = new employee_management.Salaly();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -112,10 +112,12 @@
             // 
             // salary_btn
             // 
-            this.salary_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(171)))));
+            this.salary_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.salary_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.salary_btn.FlatAppearance.BorderSize = 0;
             this.salary_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
             this.salary_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
+            this.salary_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salary_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.salary_btn.Location = new System.Drawing.Point(12, 347);
             this.salary_btn.Name = "salary_btn";
@@ -127,11 +129,14 @@
             // 
             // addEmployee_btn
             // 
-            this.addEmployee_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(171)))));
+            this.addEmployee_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.addEmployee_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.addEmployee_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEmployee_btn.FlatAppearance.BorderSize = 0;
             this.addEmployee_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
             this.addEmployee_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
-            this.addEmployee_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.addEmployee_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addEmployee_btn.ForeColor = System.Drawing.Color.SeaShell;
             this.addEmployee_btn.Location = new System.Drawing.Point(12, 284);
             this.addEmployee_btn.Name = "addEmployee_btn";
             this.addEmployee_btn.Size = new System.Drawing.Size(176, 40);
@@ -142,10 +147,13 @@
             // 
             // dashboard_btn
             // 
-            this.dashboard_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(171)))));
+            this.dashboard_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.dashboard_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.dashboard_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashboard_btn.FlatAppearance.BorderSize = 0;
             this.dashboard_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
             this.dashboard_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(97)))));
+            this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboard_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dashboard_btn.Location = new System.Drawing.Point(12, 222);
             this.dashboard_btn.Name = "dashboard_btn";
@@ -185,20 +193,6 @@
             this.panel4.Size = new System.Drawing.Size(900, 565);
             this.panel4.TabIndex = 2;
             // 
-            // addEmployee1
-            // 
-            this.addEmployee1.Location = new System.Drawing.Point(6, 0);
-            this.addEmployee1.Name = "addEmployee1";
-            this.addEmployee1.Size = new System.Drawing.Size(875, 565);
-            this.addEmployee1.TabIndex = 1;
-            // 
-            // salaly1
-            // 
-            this.salaly1.Location = new System.Drawing.Point(11, 0);
-            this.salaly1.Name = "salaly1";
-            this.salaly1.Size = new System.Drawing.Size(877, 565);
-            this.salaly1.TabIndex = 0;
-            // 
             // sqLiteCommand1
             // 
             this.sqLiteCommand1.CommandText = null;
@@ -222,6 +216,20 @@
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Size = new System.Drawing.Size(891, 565);
             this.dashboard1.TabIndex = 2;
+            // 
+            // addEmployee1
+            // 
+            this.addEmployee1.Location = new System.Drawing.Point(6, 0);
+            this.addEmployee1.Name = "addEmployee1";
+            this.addEmployee1.Size = new System.Drawing.Size(875, 565);
+            this.addEmployee1.TabIndex = 1;
+            // 
+            // salaly1
+            // 
+            this.salaly1.Location = new System.Drawing.Point(11, 0);
+            this.salaly1.Name = "salaly1";
+            this.salaly1.Size = new System.Drawing.Size(877, 565);
+            this.salaly1.TabIndex = 0;
             // 
             // MainForm
             // 

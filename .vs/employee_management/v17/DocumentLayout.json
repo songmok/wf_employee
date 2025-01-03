@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\code\\C#tutorial\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\code\\wf_employee\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|d:\\code\\wf_employee\\employee_management\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|solutionrelative:employee_management\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|d:\\code\\wf_employee\\employee_management\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|solutionrelative:employee_management\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|D:\\code\\wf_employee\\employee_management\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|solutionrelative:employee_management\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|D:\\code\\wf_employee\\employee_management\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C8AB3E6-ADC2-41D7-9A20-4CB08618F5F7}|employee_management\\employee_management.csproj|solutionrelative:employee_management\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeData.cs",
+              "DocumentMoniker": "D:\\code\\wf_employee\\employee_management\\EmployeeData.cs",
+              "RelativeDocumentMoniker": "employee_management\\EmployeeData.cs",
+              "ToolTip": "D:\\code\\wf_employee\\employee_management\\EmployeeData.cs",
+              "RelativeToolTip": "employee_management\\EmployeeData.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwCcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:48:05.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEmployee.cs",
+              "DocumentMoniker": "D:\\code\\wf_employee\\employee_management\\AddEmployee.cs",
+              "RelativeDocumentMoniker": "employee_management\\AddEmployee.cs",
+              "ToolTip": "D:\\code\\wf_employee\\employee_management\\AddEmployee.cs",
+              "RelativeToolTip": "employee_management\\AddEmployee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:35:14.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddEmployee.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\code\\wf_employee\\employee_management\\AddEmployee.cs",
+              "RelativeDocumentMoniker": "employee_management\\AddEmployee.cs",
+              "ToolTip": "D:\\code\\wf_employee\\employee_management\\AddEmployee.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "employee_management\\AddEmployee.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:35:06.867Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\code\\wf_employee\\employee_management\\LoginForm.cs",
+              "RelativeDocumentMoniker": "employee_management\\LoginForm.cs",
+              "ToolTip": "D:\\code\\wf_employee\\employee_management\\LoginForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "employee_management\\LoginForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:28:52.176Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             }
           ]
         }

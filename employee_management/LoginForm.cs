@@ -15,7 +15,7 @@ namespace employee_management
 {
     public partial class LoginForm : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\code\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+        private readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\code\wf_employee\employee_management\employee.mdf;Integrated Security=True");
 
 
 

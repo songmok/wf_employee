@@ -32,6 +32,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
+            this.addEmployee_status = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.addEmployee_clearBtn = new System.Windows.Forms.Button();
             this.addEmployee_deleteBtn = new System.Windows.Forms.Button();
             this.addEmployee_updateBtn = new System.Windows.Forms.Button();
@@ -47,9 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.addEmployee_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.addEmployee_status = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -75,6 +75,7 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(818, 230);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -113,6 +114,35 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(850, 213);
             this.panel2.TabIndex = 1;
+            // 
+            // addEmployee_picture
+            // 
+            this.addEmployee_picture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.addEmployee_picture.Location = new System.Drawing.Point(718, 25);
+            this.addEmployee_picture.Name = "addEmployee_picture";
+            this.addEmployee_picture.Size = new System.Drawing.Size(105, 94);
+            this.addEmployee_picture.TabIndex = 17;
+            this.addEmployee_picture.TabStop = false;
+            // 
+            // addEmployee_status
+            // 
+            this.addEmployee_status.FormattingEnabled = true;
+            this.addEmployee_status.Items.AddRange(new object[] {
+            "활성",
+            "비활성"});
+            this.addEmployee_status.Location = new System.Drawing.Point(396, 115);
+            this.addEmployee_status.Name = "addEmployee_status";
+            this.addEmployee_status.Size = new System.Drawing.Size(164, 20);
+            this.addEmployee_status.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(360, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "상태";
             // 
             // addEmployee_clearBtn
             // 
@@ -190,14 +220,17 @@
             this.addEmployee_importBtn.TabIndex = 0;
             this.addEmployee_importBtn.Text = "Import";
             this.addEmployee_importBtn.UseVisualStyleBackColor = false;
+            this.addEmployee_importBtn.Click += new System.EventHandler(this.addEmployee_importBtn_Click);
             // 
             // addEmployee_position
             // 
             this.addEmployee_position.FormattingEnabled = true;
             this.addEmployee_position.Items.AddRange(new object[] {
-            "남자",
-            "여자",
-            "기타"});
+            "매니저",
+            "프론트엔드",
+            "백엔드",
+            "DB",
+            "디자이너"});
             this.addEmployee_position.Location = new System.Drawing.Point(396, 77);
             this.addEmployee_position.Name = "addEmployee_position";
             this.addEmployee_position.Size = new System.Drawing.Size(164, 20);
@@ -281,35 +314,6 @@
             this.label2.Size = new System.Drawing.Size(44, 12);
             this.label2.TabIndex = 0;
             this.label2.Text = "직원 ID";
-            // 
-            // addEmployee_status
-            // 
-            this.addEmployee_status.FormattingEnabled = true;
-            this.addEmployee_status.Items.AddRange(new object[] {
-            "활성",
-            "비활성"});
-            this.addEmployee_status.Location = new System.Drawing.Point(396, 115);
-            this.addEmployee_status.Name = "addEmployee_status";
-            this.addEmployee_status.Size = new System.Drawing.Size(164, 20);
-            this.addEmployee_status.TabIndex = 16;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(360, 118);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "상태";
-            // 
-            // addEmployee_picture
-            // 
-            this.addEmployee_picture.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.addEmployee_picture.Location = new System.Drawing.Point(718, 25);
-            this.addEmployee_picture.Name = "addEmployee_picture";
-            this.addEmployee_picture.Size = new System.Drawing.Size(105, 94);
-            this.addEmployee_picture.TabIndex = 17;
-            this.addEmployee_picture.TabStop = false;
             // 
             // AddEmployee
             // 

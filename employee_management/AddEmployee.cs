@@ -15,7 +15,9 @@ namespace employee_management
 {
     public partial class AddEmployee : UserControl
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\code\wf_employee\employee_management\employee_management\employee.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Server=(LocalDB)\MSSQLLocalDB;Database=employees;Integrated Security=True;");
+        
+
         public AddEmployee()
         {
             InitializeComponent();
@@ -62,10 +64,11 @@ namespace employee_management
                     try
                     {
                         connect.Open();
-                        string checkEmID = "SELECT * FROM employees WHERE employee_id = @emID";
+                        string checkEmID = "SELECT COUNT(*) FROM employees WHERE employee_id = @emID";
 
                         using (SqlCommand checkEm = new SqlCommand(checkEmID, connect))
                         {
+                            checkEm.Parameters.AddWithValue("@emID", addEmployee_ID.Text.Trim());
                             int count = (int)checkEm.ExecuteNonQuery();
 
                             if (count >= 1)
@@ -78,15 +81,18 @@ namespace employee_management
                                 DateTime today = DateTime.Today;
 
                                 string insertData = "INSERT INTO employees " +
-                                  "(employee_id, full_name, gender, contact_number, position, image, salary, insert_date, status) " +
-                                 "VALUES (@employeeID, @fullName, @gender, @contactNum, @position, @image, @salary, @insertDate, @status)";
-                                
+                                "(employee_id, full_name, gender, contact_number" + 
+                                ", position, image, insert_date, status) " +
+                                "VALUES (@employeeID, @fullName, @gender, @contactNum" +
+                                ", @position, @image, @insertDate, @status)";
+
                                 // DB
-                                string path = Path.Combine(@"");
+                                string path = Path.Combine(@"D:\code\wf_employee\employee_management\directory\" 
+                                    + addEmployee_ID.Text.Trim() + ".jpg");
 
                                 string directoryPath = Path.GetDirectoryName(path);
 
-                                if(!Directory.Exists(directoryPath))
+                                if (!Directory.Exists(directoryPath))
                                 {
                                     Directory.CreateDirectory(directoryPath);
                                 }
@@ -106,6 +112,8 @@ namespace employee_management
 
                                     cmd.ExecuteNonQuery();
 
+                                    displayEmployeeData();
+
                                     MessageBox.Show("추가했습니다", "Infomation Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 }
                             }
@@ -122,4 +130,30 @@ namespace employee_management
                 }
             }
         }
+
+        private void addEmployee_importBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "Image Files (*jpg; *.png)|*.jpg;*.png";
+                string imagePath = "";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    imagePath = dialog.FileName;
+                    addEmployee_picture.ImageLocation = imagePath;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("에러:" + ex, "에러 메세지", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
+}
